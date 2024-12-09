@@ -15,9 +15,7 @@ pip install numpy scipy pillow
 python main.py <INPUT_FILE> -f "<FILTERS>" -o <OUTPUT_FILE>
 ```
 
-There are a few filters to choose them...
-
-`*` are arguments which are required
+There are a few filters to choose from, with various arguments. `*` represents arguments which are required for the filter.
 
 ```
 crop(
