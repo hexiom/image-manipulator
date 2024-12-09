@@ -41,9 +41,6 @@ class ArgumentAllowMethods:
   def not_from_list(l: list[any]):
     return lambda value: value not in l
 
-  def combine_predicates(*args):
-    return lambda value: _check_predicates(value, *args)
-
 class Argument:
   INT = 'int'
   NUMBER = 'number'

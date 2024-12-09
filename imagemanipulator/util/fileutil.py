@@ -1,4 +1,9 @@
-FILE_EXTENSION_ALIASES = {'jpeg': 'jpeg'}
+FILE_EXTENSION_ALIASES = {
+  'jpeg': 'jpg',
+  'jfif': 'jpg',
+  'tiff': 'tif',
+  'dib': 'bmp'
+}
 
 def get_file_ext(file_name):
   dot_split = file_name.split(".")
