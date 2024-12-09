@@ -33,8 +33,7 @@ def main():
   args, unknown_args = parser.parse_known_args()
 
   if len(unknown_args) > 0:
-    logger.warning(f"Invalid arguments: {', '.join(map(lambda v: f"\"{v}\"", unknown_args))}")
-    exit(1)
+    logger.error(f"Invalid arguments: {', '.join(map(lambda v: f"\"{v}\"", unknown_args))}")
 
   output_file_name: str = args.output
   image_name: str = args.file_name[0]
